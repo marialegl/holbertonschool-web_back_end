@@ -1,6 +1,4 @@
 node_modules
-.venv/
-__pychache__/
 package-lock.json
 package.json
 babel.config.js
