@@ -14,7 +14,7 @@ export default class Currency {
     }
     this._code = newCode;
   }
-  
+
   get name() {
     return this._name;
   }
