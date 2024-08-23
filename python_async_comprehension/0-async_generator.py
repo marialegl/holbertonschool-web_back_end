@@ -3,10 +3,11 @@
 
 import random
 import asyncio
+from typing import AsyncGenerator
 
 
-"""Definition of the coroutine"""
-async def async_generator():
+async def async_generator() -> AsyncGenerator[float, None]:
+    """Definition of the coroutine"""
     for _ in range(10):
         """Loop that repeats 10 times"""
         await asyncio.sleep(1)
