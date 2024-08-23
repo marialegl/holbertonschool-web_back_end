@@ -14,7 +14,7 @@ def measure_time(n: int, max_delay: int) -> float:
     """
     Measures the total execution time of wait_n
     and returns the average time per coroutine.
-    
+
     Args:
     n (int): The number of coroutines to spawn.
     max_delay (int): The maximum delay for each coroutine.
