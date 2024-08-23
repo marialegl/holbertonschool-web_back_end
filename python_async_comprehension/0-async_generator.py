@@ -3,16 +3,16 @@
 Async Generator
 """
 
+
 import random
 import asyncio
 from typing import Generator
 
 
-async def async_generator() -> Generator[float, None]:
-    """Definition of the coroutine"""
+async def async_generator() -> Generator[float, None, None]:
+    """CoroutineLoop that repeats 10 times
+    Asynchronous wait of 1 second
+    Yields a random number between 0 and 10"""
     for _ in range(10):
-        """Loop that repeats 10 times"""
         await asyncio.sleep(1)
-        """Asynchronous wait of 1 second"""
         yield random.uniform(0, 10)
-        """Yields a random number between 0 and 10"""
