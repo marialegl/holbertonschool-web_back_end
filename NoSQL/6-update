@@ -1,0 +1,5 @@
+// 6-update
+db.school.updateMany(
+    { name: "Holberton school" }, // Condición de búsqueda
+    { $set: { address: "972 Mission street" } } // Actualización
+)
