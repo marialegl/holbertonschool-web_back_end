@@ -1,6 +1,8 @@
 const http = require('http');
 const fs = require('fs');
-const { countStudents } = require('./3-read_file_async'); // Asegúrate de tener esta función en el archivo mencionado
+const countStudents = require('./3-read_file_async');
+console.log(countStudents);
+
 
 // Crear el servidor
 const app = http.createServer((req, res) => {
