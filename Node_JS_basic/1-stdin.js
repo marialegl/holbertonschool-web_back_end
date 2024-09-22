@@ -5,7 +5,7 @@ process.stdin.setEncoding('utf-8');
 process.stdin.on('data', (input) => {
   // Eliminar espacios y saltos de línea
   const name = input.trim();
-  console.log(`Your name is: ${name}\r`);
+  console.log(`Your name is: ${name}`);
   process.stdin.end();
 });
 
