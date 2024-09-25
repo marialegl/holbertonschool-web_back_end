@@ -5,7 +5,7 @@ process.stdin.setEncoding('utf-8');
 process.stdin.on('data', (input) => {
   // Normalizar el input para eliminar saltos de línea en diferentes plataformas
   const name = input.replace(/(\r\n|\n|\r)/gm, '').trim();
-  console.log(`Your name is: ${name}`);
+  console.log(`Your name is: ${name}\r`);
 });
 
 process.stdin.on('end', () => {
