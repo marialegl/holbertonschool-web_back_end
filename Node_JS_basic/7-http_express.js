@@ -22,7 +22,7 @@ app.get('/students', (req, res) => {
       res.send(`This is the list of our students\n${message}`);
     })
     .catch((error) => {
-      res.send('This is the list of our students\n' + error.message);
+      res.send(`This is the list of our students\n${error.message}`);
     });
 });
 
