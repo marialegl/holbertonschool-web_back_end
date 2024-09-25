@@ -9,6 +9,6 @@ process.stdin.on('data', (input) => {
 });
 
 process.stdin.on('end', () => {
-  console.log('This important software is now closing\r');
+  console.log('This important software is now closing');
   process.exit(); // Finalizar el proceso de forma correcta
 });
