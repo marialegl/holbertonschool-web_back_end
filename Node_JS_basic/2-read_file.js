@@ -20,14 +20,12 @@ export default function countStudents(path) {
     let totalStudents = 0;
 
     // Procesar cada línea (cada estudiante)
-    for (let i = 1; i < lines.length; i++) {
+    for (let i = 1; i < lines.length; i += 1) {
       const student = lines[i].split(',');
 
-      if (student.length < header.length)
-        continue; // Ignorar líneas incompletas
-
-      const firstname = student[0]; // Primer nombre del estudiante
-      const field = student[3]; // Campo de estudio
+      if (student.length < header.length) { // Ignorar líneas incompletas
+        const firstname = student[0]; // Primer nombre del estudiante
+        const field = student[3]; // Campo de estudio
 
       // Si el campo no está en el objeto, lo inicializamos
       if (!fieldData[field]) {
@@ -36,7 +34,7 @@ export default function countStudents(path) {
 
       // Añadimos el nombre del estudiante al campo correspondiente
       fieldData[field].push(firstname);
-      totalStudents++;
+      totalStudents += 1;
     }
 
     // Mostrar el número total de estudiantes
@@ -53,4 +51,3 @@ export default function countStudents(path) {
 }
 
 module.exports = countStudents;
-
